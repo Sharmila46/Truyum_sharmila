@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            truYum<img src="images/img.png">
+            <a href="menu-item-list-admin.html" class="a1">Menu</a>
+        
+        </header>   
+        <h1>Edit Menu Item Status</h1>
+            <table class="edit">
+                <tr>
+                    <td class="stock"><label>Name</label></td>
+                    <td><input type="text" name="title" required maxlength="65"></td>
+                </tr>
+                
+                <tr>
+                    <td class="stock"><label>Price (Rs.)</label></td>
+                    <td><input type="number" required name="price"  maxlength="65"></td>
+                    <td class="stock"><label>Active</label></td>
+                    <td><input type="radio" name="inStock"></td>
+                    <td><label >Yes</label><br></td>
+                    <td><input type="radio" name="inStock"></td>
+                    <td><label >No</label><br></td>
+                    <td class="stock"><label>Date of Launch</label></td>
+                    <td><input type="date" id="start" name="dateOflaunch" value="DD/MM/YYYY"></td>
+                    <td class="stock"><label>Category</label></td>
+                    <td><select type="dropdown" name="category">
+                        <option name="category">>Starters</option>
+                        <option name="category">>Main Course</option>
+                        <option name="category">>Deserts</option>
+                        <option name="category">>Drinks</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td class="stock"><input type="checkbox" name="freedelivery">Free delivery</td>
+                    <td >
+                   
+                </tr>
+                <tr>
+                <td></td>
+                </tr>
+                
+            </table>
+       
+       
+        
+
+        
+        
+    </body>
+    <footer>Copyright &copy; 2019</footer>
+    
+</html>
