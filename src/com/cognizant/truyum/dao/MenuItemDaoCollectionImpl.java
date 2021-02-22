@@ -27,13 +27,14 @@ public class MenuItemDaoCollectionImpl implements MenuItemDao {
 			menuItemList.add(menuItem3);
 			menuItemList.add(menuItem4);
 			menuItemList.add(menuItem5);
-
 		}
 	}
 
 	@Override
 	public List<MenuItem> getMenuItemListAdmin() {
 		// TODO Auto-generated method stub
+		
+		
 		return menuItemList;
 	}
 
@@ -54,21 +55,20 @@ public class MenuItemDaoCollectionImpl implements MenuItemDao {
 	@Override
 	public void modifyMenuItem(MenuItem menuItem) {
 		// TODO Auto-generated method stub
-		for(MenuItem value:menuItemList) {
-			if(value.getId() == menuItem.getId() || value.getName().equals(menuItem.getName())) {
+		for (MenuItem value : menuItemList) {
+			if (value.getId() == menuItem.getId() || value.getName().equals(menuItem.getName())) {
 				value = menuItem;
 			}
 		}
-
 	}
 
 	@Override
 	public MenuItem getMenuItem(long menuItemId) {
 		// TODO Auto-generated method stub
-		MenuItem menuitem=null;
+		MenuItem menuitem = null;
 		for (MenuItem menuItem : menuItemList) {
 			if (menuItemId == menuItem.getId()) {
-				menuitem=menuItem;
+				menuitem = menuItem;
 
 			}
 		}
